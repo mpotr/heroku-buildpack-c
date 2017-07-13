@@ -4,4 +4,5 @@
 BUILD_DIR=$1
 
 cd BUILD_DIR
+echo 'CPP'
 (ls -R | grep '\.c$' > /dev/null 2>&1) && (echo "CPP" && exit 0) || ({ls} ; exit 1)
