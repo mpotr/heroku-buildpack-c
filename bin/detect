@@ -2,4 +2,5 @@
 # bin/detect <build-dir>
 
 BUILD_DIR=$1
+echo 'HERE!'
 (ls -R | grep '\.c$') && (echo "CPP") || exit 1
