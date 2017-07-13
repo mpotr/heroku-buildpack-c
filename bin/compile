@@ -1,5 +1,9 @@
 #!/bin/bash
 # bin/compile.sh <build-dir> <cache-dir>
 
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+cd BUILD_DIR
 ./configure
 make
